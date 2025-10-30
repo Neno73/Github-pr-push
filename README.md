@@ -90,12 +90,25 @@ gh auth login
 
 #### Option 1: Install from Marketplace (Recommended)
 
+**Quick install:**
 ```bash
-# Add the thoughtful-dev marketplace (if not already added)
-claude plugin add-marketplace Neno73/thoughtful-dev
+claude
+> /plugin install github-push-pr
+```
 
-# Install the plugin
-claude plugin install github-push-pr
+**Step-by-step:**
+```bash
+# Start Claude Code
+claude
+
+# Inside Claude Code, add the marketplace
+> /plugin marketplace add Neno73/thoughtful-dev
+
+# Browse available plugins
+> /plugin
+
+# Install github-push-pr
+> /plugin install github-push-pr@thoughtful-dev-marketplace
 ```
 
 **Note:** This plugin is part of the [thoughtful-dev marketplace](https://github.com/Neno73/thoughtful-dev), which also includes the thoughtful-dev plugin. You can install either or both plugins from the same marketplace.
@@ -104,11 +117,14 @@ claude plugin install github-push-pr
 
 ```bash
 # Clone the repository
-git clone https://github.com/Neno73/github-push-pr.git
-cd github-push-pr
+git clone https://github.com/Neno73/Github-pr-push.git
+cd Github-pr-push
 
-# Install locally
-claude plugin install .
+# Start Claude Code
+claude
+
+# Inside Claude Code, install from current directory
+> /plugin install .
 ```
 
 #### Option 3: Manual Installation
@@ -120,8 +136,11 @@ claude plugin install .
 ### Verify Installation
 
 ```bash
-# List installed plugins
-claude plugin list
+# Start Claude Code
+claude
+
+# Inside Claude Code, list installed plugins
+> /plugin list
 
 # You should see: github-push-pr
 ```
@@ -133,7 +152,7 @@ For the best experience with the feedback iteration loop, install the official C
 ```bash
 # Option 1: Use Claude Code installer (easiest)
 claude
-> "/install-github-app"
+> /install-github-app
 
 # Option 2: Manual installation
 # Visit: https://github.com/apps/claude
@@ -418,12 +437,12 @@ This plugin works standalone but combines powerfully with the **official Claude 
 
 Quick setup:
 ```bash
-# 1. Install this plugin
-claude plugin install github-push-pr
+# 1. Install this plugin (inside Claude Code)
+claude
+> /plugin install github-push-pr
 
 # 2. Install official GitHub App
-claude
-> "/install-github-app"
+> /install-github-app
 
 # 3. Now you have both local automation AND team collaboration!
 ```
@@ -439,8 +458,9 @@ This plugin works standalone but integrates beautifully with [thoughtful-dev](ht
 Install both for the complete thoughtful development experience:
 
 ```bash
-claude plugin install thoughtful-dev
-claude plugin install github-push-pr
+# Inside Claude Code
+claude
+> /plugin install thoughtful-dev github-push-pr
 ```
 
 ## 🧪 Testing
