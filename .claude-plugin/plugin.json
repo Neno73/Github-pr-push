@@ -1,0 +1,11 @@
+{
+  "name": "github-push-pr",
+  "description": "Complete GitHub workflow automation with security-first approach. Enforces feature branch workflow, runs security checks, creates PRs via GitHub CLI, and iterates on ClaudeBot feedback automatically.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Neno73"
+  },
+  "homepage": "https://github.com/Neno73/Github-pr-push",
+  "repository": "https://github.com/Neno73/Github-pr-push",
+  "license": "MIT"
+}
