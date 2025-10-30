@@ -91,12 +91,14 @@ gh auth login
 #### Option 1: Install from Marketplace (Recommended)
 
 ```bash
-# Add the marketplace (if not already added)
-claude plugin add-marketplace Neno73/github-push-pr-marketplace
+# Add the thoughtful-dev marketplace (if not already added)
+claude plugin add-marketplace Neno73/thoughtful-dev
 
 # Install the plugin
 claude plugin install github-push-pr
 ```
+
+**Note:** This plugin is part of the [thoughtful-dev marketplace](https://github.com/Neno73/thoughtful-dev), which also includes the thoughtful-dev plugin. You can install either or both plugins from the same marketplace.
 
 #### Option 2: Install from Source
 
