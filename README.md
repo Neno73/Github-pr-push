@@ -88,32 +88,40 @@ gh auth login
 
 ### Install Plugin
 
-#### Option 1: Install from Marketplace (Recommended)
+#### Option 1: Direct Install from GitHub (Recommended)
 
 **Quick install:**
 ```bash
 claude
-> /plugin install github-push-pr
+> /plugin install Neno73/Github-pr-push
 ```
 
-**Step-by-step:**
+**Or specify the full URL:**
 ```bash
-# Start Claude Code
 claude
-
-# Inside Claude Code, add the marketplace
-> /plugin marketplace add Neno73/thoughtful-dev
-
-# Browse available plugins
-> /plugin
-
-# Install github-push-pr
-> /plugin install github-push-pr@thoughtful-dev-marketplace
+> /plugin install https://github.com/Neno73/Github-pr-push
 ```
 
-**Note:** This plugin is part of the [thoughtful-dev marketplace](https://github.com/Neno73/thoughtful-dev), which also includes the thoughtful-dev plugin. You can install either or both plugins from the same marketplace.
+#### Option 2: Install with thoughtful-dev (Complete Workflow)
 
-#### Option 2: Install from Source
+Install both plugins together for the complete development experience:
+
+```bash
+claude
+> /plugin install Neno73/thoughtful-dev
+> /plugin install Neno73/Github-pr-push
+```
+
+Or install thoughtful-dev from its marketplace, then add this plugin:
+
+```bash
+claude
+> /plugin marketplace add Neno73/thoughtful-dev
+> /plugin install thoughtful-dev
+> /plugin install Neno73/Github-pr-push
+```
+
+#### Option 3: Install from Source
 
 ```bash
 # Clone the repository
@@ -127,7 +135,7 @@ claude
 > /plugin install .
 ```
 
-#### Option 3: Manual Installation
+#### Option 4: Manual Installation
 
 1. Download the latest release ZIP
 2. Extract to `~/.claude/plugins/github-push-pr`
@@ -437,9 +445,11 @@ This plugin works standalone but combines powerfully with the **official Claude 
 
 Quick setup:
 ```bash
-# 1. Install this plugin (inside Claude Code)
+# Inside Claude Code
 claude
-> /plugin install github-push-pr
+
+# 1. Install this plugin
+> /plugin install Neno73/Github-pr-push
 
 # 2. Install official GitHub App
 > /install-github-app
@@ -460,7 +470,8 @@ Install both for the complete thoughtful development experience:
 ```bash
 # Inside Claude Code
 claude
-> /plugin install thoughtful-dev github-push-pr
+> /plugin install Neno73/thoughtful-dev
+> /plugin install Neno73/Github-pr-push
 ```
 
 ## 🧪 Testing
