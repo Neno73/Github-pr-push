@@ -1,0 +1,44 @@
+{
+  "name": "github-push-pr-marketplace",
+  "owner": {
+    "name": "Neno73",
+    "email": "[email protected]"
+  },
+  "metadata": {
+    "description": "Automate git workflow enforcement, PR creation, and ClaudeBot feedback iteration loop",
+    "version": "1.0.0",
+    "pluginRoot": "./"
+  },
+  "plugins": [
+    {
+      "name": "github-push-pr",
+      "source": "./",
+      "description": "Complete GitHub workflow automation with 4 core skills: git-workflow-enforcer (ensures feature branch usage), pr-creator (automated PR creation with security checks), claudebot-feedback-loop (iterative ClaudeBot feedback application), and thoughtful-pr-workflow (end-to-end orchestrator). Prevents secrets commits, enforces git best practices, and automates PR iteration cycles.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Neno73",
+        "email": "[email protected]"
+      },
+      "homepage": "https://github.com/Neno73/github-push-pr",
+      "repository": "https://github.com/Neno73/github-push-pr",
+      "license": "MIT",
+      "keywords": [
+        "git",
+        "github",
+        "pr",
+        "pull-request",
+        "automation",
+        "workflow",
+        "claudebot",
+        "feedback",
+        "security",
+        "ci-cd",
+        "code-review",
+        "git-workflow",
+        "branch-management"
+      ],
+      "category": "productivity",
+      "strict": true
+    }
+  ]
+}

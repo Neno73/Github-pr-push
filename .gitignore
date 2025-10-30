@@ -1,0 +1,34 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Secrets
+*.key
+*.pem
+credentials.json
+config/secrets.yml
+
+# Claude feedback files (local development)
+.claude/feedback/
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test artifacts
+tests/temp/
+tests/output/
+
+# Git temp files
+*.orig
